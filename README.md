@@ -8,6 +8,11 @@ This script will tell you if you're missing items from your env file.
 
 # Run
 
+If you have an `.env.example` present in the root of your repo,
+then this will be taken as the list of required environment vars. 
+
+Otherwise, create a file named `required_envs`.
+
 ```
 cp required_envs.example required
 ```
