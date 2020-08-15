@@ -4,7 +4,7 @@ import tempfile
 from os import path
 
 if path.exists('.env.example'):
-    env_example = subprocess.check_output("awk -F '=' 'NF {print $1}' .env.example", shell=True)
+    env_example = subprocess.check_output("awk -F '=' 'NF {print $1}' .env.example | grep --regexp=^[a-zA-Z]", shell=True)
     fp = tempfile.TemporaryFile()
     fp.write(env_example)
     fp.seek(0)
