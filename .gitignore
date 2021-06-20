@@ -1,1 +1,4 @@
 required_envs
+.env
+venv
+dist
