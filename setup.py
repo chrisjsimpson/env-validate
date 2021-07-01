@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="env_validate",
-    version="0.03",
+    version="0.04",
     author="Karma Computing",
     author_email="oss@karmacomputing.co.uk",
     desciption="validate env",
